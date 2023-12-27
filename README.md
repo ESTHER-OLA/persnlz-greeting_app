@@ -1,6 +1,6 @@
 # Greeting App - Personalized Greeting App
 
-This is Personalized greeting app [one of my training assgn in hertecttrail web-development pro]
+This is Personalized greeting app [one of my training assgn in hertecttrail web-development pro track]
 
 # Table of content
 
@@ -25,7 +25,7 @@ The app should :
 - Should store user name in local storage on submit.
 - Check if ther user's name is stored in local storage,
   if name found display personalized greeting, if name not found display a generic greeting.
-- Provide a botton to clear the stored name from local storage
+- Provide a button to clear the stored name from local storage
 - Update the display greeting accordingly.
 
 ### Links
@@ -35,7 +35,7 @@ The app should :
 
 ## My Process
 
-I started this project by first writing the respective HTML codes and the CSS styling and finally JavaScript.
+I started this project by first writing the respective HTML codes and CSS styling and finally JavaScript.
 
 ### Built With 
 
@@ -55,7 +55,7 @@ Resource 2 - [https://blog.logrocket.com/localstorage-javascript-complete-guide/
 
 Resource 3 - [https://www.theclientside.net/dom/dom-handling-form-submissions/]
 
-This helped me while I was brainstorming on how use JavaScript Dom manipulation for personalized greeting app accordingly without interruption of other command.
+This helped me while I was brainstorming on how to use JavaScript Dom manipulation for personalized greeting app accordingly without interrupting other command.
 
 
 ### Author 
