@@ -31,7 +31,7 @@ The app should :
 ### Links
 
 - Solution URL [https://github.com/ESTHER-OLA/persnlz-greeting_app]
-- Live Site URL [https://personalized-greeting-app.netlify.app/]
+- Live Site URL [https://personalz-greeting-app.netlify.app/]
 
 ## My Process
 
