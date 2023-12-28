@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personamized Greeting App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personanized Greeting App</title>
 </head>
 <body onload="greet()">
     <div class="container">
         <div class="input-name">
+          <p id="greeting"></p>
+          <br>
           <h2>Input Username</h2>
           <br>
           <form action="" id="myForm">
@@ -16,11 +17,11 @@
             <br>
             <br>
             <button type="submit" onclick="save()">Submit <i class="fa-solid fa-plus"></i></button>
+            
             <button type="reset" onclick="del()">Clear <i class="fa-solid fa-ban"></i></button>
           </form>
         </div>
       </div>
-      <p id="greeting"></p>
  
       <script src="script.js"></script>
 </body>

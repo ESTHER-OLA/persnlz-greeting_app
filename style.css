@@ -28,6 +28,11 @@ body {
 .input-name h2 {
   padding: 10px;
 }
+.input-name p{
+  text-align: center;
+  color: #8114e0;
+  font-weight: 800;
+}
 .input-name input {
   width: 250px;
   padding: 5px;
