@@ -6,23 +6,23 @@
     <title>Personanized Greeting App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="greet()">
-    <div class="container">
-        <div class="input-name">
-          <p id="greeting"></p>
-          <br>
-          <h2>Input Username</h2>
-          <br>
-          <form action="" id="myForm">
-            <input type="text" id="name" name="name" placeholder="Enter name..." />
-            <br>
-            <br>
-            <button type="submit" onclick="save()">Submit <i class="fa-solid fa-plus"></i></button>
-            
-            <button type="reset" onclick="del()">Clear <i class="fa-solid fa-ban"></i></button>
-          </form>
-        </div>
-      </div>
+<body>
+  <div class="container">
+    <div class="input-name">
+      <h1 id="greeting"></h1>
+      <br>
+      <form id="my-form">
+        <label for="name-input">Enter your name:</label>
+        <br>
+        <br>
+        <input type="text" id="name-input" name="name">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button id="clear-button">Clear Name</button>
+      </form>
+    </div>
+  </div>
  
       <script src="script.js"></script>
 </body>
