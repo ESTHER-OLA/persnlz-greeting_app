@@ -1,29 +1,54 @@
-function greet() {
-  const name = localStorage.getItem('name');
-  if (name) {
-    document.getElementById('greeting').innerHTML = 'Hello, ' + name + '!';
-  }else {
-    document.getElementById('greeting').innerHTML = 'Hello, there!';
-  }
-}  
 
-function save() {
-  const name = document.getElementById("name").value;
-  localStorage.setItem("name", name);
-  greet();
-}
+      // Get the form element
+      const form = document.getElementById('my-form');
 
-function del() {
-  const name = localStorage.clear();
-  }
+      // Get the input element
+      const input = document.getElementById('name-input');
 
-const form = document.getElementById('myForm');
+      // Get the clear button element
+      const clearButton = document.getElementById('clear-button');
 
-       form.addEventListener('submit', function (event) {
+      // Get the greeting element
+      const greeting = document.getElementById('greeting');
+
+      // Add an event listener to the form
+      form.addEventListener('submit', function(event) {
+        // Prevent the form from submitting
         event.preventDefault();
-      
-         const name = form.elements['name'].value;
-      
-         console.log('Form submitted with the following data:');
-         console.log('Name:', name);
-       });
+
+        // Get the name from the input element
+        const name = input.value;
+
+        // Store the name in local storage
+        localStorage.setItem('name', name);
+
+        // Update the displayed greeting
+        greeting.textContent = `Hello, ${name}!`;
+
+        // Log the name to the console
+        console.log('Form submitted with the following data:');
+        console.log('Name:', name);
+      });
+
+      // Add an event listener to the clear button
+      clearButton.addEventListener('click', function() {
+        // Clear the stored name from local storage
+        localStorage.removeItem('name');
+
+        // Clear the input field
+        input.value = '';
+
+        // Update the displayed greeting
+        greeting.textContent = 'Hello, stranger!';
+      });
+
+      // Check if a name is stored in local storage
+      const storedName = localStorage.getItem('name');
+
+      // Update the displayed greeting based on whether a name was stored or not
+      if (storedName) {
+        greeting.textContent = `Hello, ${storedName}!`;
+        input.value = storedName;
+      } else {
+        greeting.textContent = 'Hello, stranger!';
+      }
